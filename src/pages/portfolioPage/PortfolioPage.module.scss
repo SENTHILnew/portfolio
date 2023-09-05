@@ -1,0 +1,7 @@
+.page-container{
+    margin: 0 10rem;
+    .content-container{
+        height: calc(100vh - 17vh - 4rem);
+        overflow: auto;
+    }
+}

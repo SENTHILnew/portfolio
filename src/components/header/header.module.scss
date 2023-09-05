@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    row-gap: 0.5rem;
+    align-items: center;
+    height: 17vh;
+    padding: 0.5rem;
+    .nabar{
+        flex-grow: 1;
+        flex-direction: row;
+        justify-content: end;
+        @apply text-2xl gap-x-[1rem];
+        a{
+            @apply hover:text-gray-400 hover:border-b-4 h-10 pb-4;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+   .header{
+    .nabar{
+        position: relative;
+        flex-direction: column;
+    }
+   }
+  }
+
