@@ -43,15 +43,15 @@
                 }
             }
         }
-       
-        
-       
         .nabar{
             flex-direction: row;
             justify-content: end;
             @apply text-2xl gap-x-8;
-            a{
-                @apply hover:text-gray-600 hover:border-b-4 h-10 pb-4;
+            a:hover{
+                color: grey;
+                text-decoration: underline;
+                text-underline-offset: 1rem;
+                text-decoration-color: rgb(181, 181, 181);
             }
         }
         .showNavBar{
