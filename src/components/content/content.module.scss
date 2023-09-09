@@ -1,3 +1,9 @@
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        align-items: center;
+        @apply gap-y-36;
 .intro{
     display: flex;
     @apply gap-x-20;
@@ -29,4 +35,26 @@
             border: 1px solid rgb(32, 32, 32);
         }
     }
+   
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @apply gap-y-4;
+    .linksContainer{
+        display: flex;
+        @apply gap-x-8 bg-gray-200 p-4 rounded-full;
+        border: 1px solid rgb(32, 32, 32);
+        flex-wrap: wrap;
+        margin: 0 1rem;
+        p:hover{
+            color: grey;
+            text-decoration: underline;
+            text-underline-offset: 1rem;
+            text-decoration-color: rgb(181, 181, 181);
+        }
+    }
+}
 }

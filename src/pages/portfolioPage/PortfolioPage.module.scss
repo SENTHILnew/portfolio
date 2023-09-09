@@ -1,6 +1,6 @@
 .page-container{
-    .content-container{
-        height: calc(100vh - 17vh - 4rem);
-        overflow: auto;
-    }
+    display: flex;
+    flex-direction: column;
+    @apply gap-y-20;
+    overflow: auto;
 }
