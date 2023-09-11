@@ -25,17 +25,17 @@ const PortfolioContent: React.FC = () => {
                 <div className='w-[30rem] h-[30rem] rounded-full overflow-hidden'><img src={over? profileGif : profile}  onMouseOver={() => setOver(true)}
       onMouseOut={() => setOver(false)}></img></div>
             </div>
-            <div id="know-more" className={classes.knowMore}>
+            <div id="know-more" className='flex gap-y-8 flex-wrap flex-col items-center justify-center w-full'>
                     <p className='text-gray-600 font-bold'>More</p>
                     <p className='text-5xl font-bold'>About Me</p>
-                    <div className={classes.infoContainer}>
-                       <div className={classes.infoItem}>
-                        <img src={expImage} className={classes.icon}></img>
+                    <div className='p-8 flex items-center justify-center gap-x-8 flex-wrap gap-y-4 w-full'>
+                       <div className='p-8 flex items-center justify-center border-2 border-gray-400 rounded-2xl w-1/2 flex-col gap-y-2 h-[10rem] w-[25rem]'>
+                        <img src={expImage} className='h-[3rem]'></img>
                         <p className='font-bold text-xl'>Experience</p>
                         <p className='text-center text-gray-600'>5+ years<br/>Frontend Development</p>
                        </div>
-                       <div className={classes.infoItem}>
-                       <img src={expImage} className={classes.icon}></img>
+                       <div className='p-8 flex items-center justify-center border-2 border-gray-400 rounded-2xl w-1/2 flex-col gap-y-2 h-[10rem] w-[25rem]'>
+                       <img src={expImage} className='h-[3rem]'></img>
                         <p className='font-bold text-xl'>Education</p>
                         <p className='text-center text-gray-600'>Bachelors Degree</p>
                        </div>
