@@ -70,4 +70,15 @@
         }
     }
 }
+
+.experience{
+        width: 100%;
+        @apply p-8 flex items-center justify-center gap-x-8 flex-wrap gap-y-4;
+        .infoItem{
+            @apply p-8 flex items-center justify-center border-2 border-gray-400 rounded-2xl w-1/2 flex-col gap-y-2 h-[10rem] w-[25rem];
+            .icon{
+                height: 3rem;
+            }
+        }
+}
 }

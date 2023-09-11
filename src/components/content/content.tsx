@@ -44,6 +44,9 @@ const PortfolioContent: React.FC = () => {
                     Front End Developer with 5+ years of experience in Front End development Angular, React, JavaScript, TypeScript, NodeJS with express
                     </p>
             </div>
+            <div className={classes.experience}>
+
+            </div>
             <div id="contact" className={classes.contact}>
                     <p className='text-gray-600 font-bold'>Get in Touch</p>
                     <p className='text-5xl font-bold'>Contact Me</p>
