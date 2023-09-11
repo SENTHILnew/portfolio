@@ -1,12 +1,15 @@
 import classes from './content.module.scss';
-import React from 'react';
+import React, { useState } from 'react';
 import profile from '../../assets/images/emoji.png';
+import profileGif from '../../assets/images/emoji.gif';
 import cv from './Senthilnathan_Mani.pdf';
 import linkedIn from '../../assets/images/linkedin.png';
 import email from '../../assets/images/email.png';
+import Navs from '../navs/navs';
+import expImage from '../../assets/images/experience.png';
 
 const PortfolioContent: React.FC = () => {
-
+    const [over, setOver] = useState(false);
     return(
         <div className={classes.contentContainer}>
             <div id="about" className={classes.intro}>
@@ -19,7 +22,27 @@ const PortfolioContent: React.FC = () => {
                         <div className={`${classes.buttons} ${classes.contact} cursor-pointer`}><a href='#contact'>Contact</a></div>
                     </div>
                 </div>
-                <div className='w-[30rem] h-[30rem] rounded-full overflow-hidden'><img src={profile} ></img></div>
+                <div className='w-[30rem] h-[30rem] rounded-full overflow-hidden'><img src={over? profileGif : profile}  onMouseOver={() => setOver(true)}
+      onMouseOut={() => setOver(false)}></img></div>
+            </div>
+            <div id="know-more" className={classes.knowMore}>
+                    <p className='text-gray-600 font-bold'>More</p>
+                    <p className='text-5xl font-bold'>About Me</p>
+                    <div className={classes.infoContainer}>
+                       <div className={classes.infoItem}>
+                        <img src={expImage} className={classes.icon}></img>
+                        <p className='font-bold text-xl'>Experience</p>
+                        <p className='text-center text-gray-600'>5+ years<br/>Frontend Development</p>
+                       </div>
+                       <div className={classes.infoItem}>
+                       <img src={expImage} className={classes.icon}></img>
+                        <p className='font-bold text-xl'>Education</p>
+                        <p className='text-center text-gray-600'>Bachelors Degree</p>
+                       </div>
+                    </div>
+                    <p>
+                    Front End Developer with 5+ years of experience in Front End development Angular, React, JavaScript, TypeScript, NodeJS with express
+                    </p>
             </div>
             <div id="contact" className={classes.contact}>
                     <p className='text-gray-600 font-bold'>Get in Touch</p>
@@ -29,6 +52,9 @@ const PortfolioContent: React.FC = () => {
                         <p className='flex items-center gap-x-2 flex-wrap'><img src={linkedIn} alt='Linked In' className='h-[2.2rem]'></img><a href='https://www.linkedin.com/in/senthilnathan-mani-b7068685/' target="_blank" rel="noreferrer">Linked In</a></p>
                     </div>
             </div>
+            <nav className='flex gap-x-8 text-xl'>
+            <Navs></Navs>
+            </nav>
         </div>
     )
 }

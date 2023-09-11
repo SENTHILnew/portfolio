@@ -1,3 +1,4 @@
+import Navs from '../navs/navs';
 import classes from './header.module.scss';
 import React, { useState } from 'react'
 
@@ -17,10 +18,7 @@ const Header: React.FC = () => {
         <span></span>
           </div>
         <nav className={`flex ${classes.nabar} ${isMenuOpen && classes.showNavBar}`}>
-            <a href='#about'>About</a>
-            <a href='#experience'>Experience</a>
-            <a href='#projects'>Projects</a>
-            <a href='#contact'>Contact</a>
+          <Navs></Navs>
           </nav>
         </div>
          

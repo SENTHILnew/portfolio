@@ -45,7 +45,7 @@
     @apply gap-y-4;
     .linksContainer{
         display: flex;
-        @apply gap-x-8 bg-gray-200 p-4 rounded-full;
+        @apply gap-x-8 bg-gray-200 p-4 rounded-full items-center justify-center;
         border: 1px solid rgb(32, 32, 32);
         flex-wrap: wrap;
         margin: 0 1rem;
@@ -54,6 +54,19 @@
             text-decoration: underline;
             text-underline-offset: 1rem;
             text-decoration-color: rgb(181, 181, 181);
+        }
+    }
+}
+.knowMore{
+    @apply flex gap-y-8 flex-wrap flex-col items-center justify-center w-full;
+    .infoContainer{
+        width: 100%;
+        @apply p-8 flex items-center justify-center gap-x-8 flex-wrap gap-y-4;
+        .infoItem{
+            @apply p-8 flex items-center justify-center border-2 border-gray-400 rounded-2xl w-1/2 flex-col gap-y-2 h-[10rem] w-[25rem];
+            .icon{
+                height: 3rem;
+            }
         }
     }
 }
