@@ -1,0 +1,21 @@
+{
+    "frontEndExperience": [
+        { "title": "HTML", "rating": "Experienced" },
+        { "title": "CSS", "rating": "Experienced" },
+        { "title": "JavaScript", "rating": "Experienced" },
+        { "title": "Angular", "rating": "Experienced" },
+        { "title": "React", "rating": "Intermediate" },
+        { "title": "TypeScript", "rating": "Intermediate" },
+        { "title": "SASS", "rating": "Intermediate" },
+        { "title": "Jest", "rating": "Experienced" },
+        { "title": "Tailwind", "rating": "Experienced" }
+    ],
+    "backEndExperience": [
+        { "title": "Node", "rating": "Intermediate" },
+        { "title": "Express", "rating": "Intermediate" },
+        { "title": "MongoDB", "rating": "Basic" },
+        { "title": "SQL", "rating": "Intermediate" },
+        { "title": ".NET", "rating": "Basic" },
+        { "title": "Azure Devops", "rating": "Basic" }
+    ]
+}

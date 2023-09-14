@@ -1,4 +1,4 @@
-.header{
+.header {
     display: flex;
     row-gap: 0.5rem;
     align-items: center;
@@ -6,11 +6,11 @@
     margin: 0 10rem;
     padding-top: 4rem;
     flex-wrap: wrap;
-    .navcontainer{
+    .navcontainer {
         position: relative;
         display: flex;
         justify-content: flex-end;
-        .burgerMenu{
+        .burgerMenu {
             display: none;
             flex-direction: column;
             justify-content: space-between;
@@ -23,38 +23,39 @@
                 background-color: black;
                 transition: all 0.3s ease-in-out;
             }
-            &.open{
-                span:first-child{
+            &.open {
+                span:first-child {
                     transform: rotate(45deg) translate(10px, 5px);
                 }
-                span:last-child{
+                span:last-child {
                     transform: rotate(-45deg) translate(10px, -5px);
                 }
-                span:nth-child(2){
+                span:nth-child(2) {
                     opacity: 0;
                 }
             }
-            &.close{
-                span:first-child, span:last-child{
+            &.close {
+                span:first-child,
+                span:last-child {
                     transform: none;
                 }
-                span:nth-child(2){
+                span:nth-child(2) {
                     opacity: 1;
                 }
             }
         }
-        .nabar{
+        .nabar {
             flex-direction: row;
             justify-content: end;
             @apply text-2xl gap-x-8;
-            a:hover{
+            a:hover {
                 color: grey;
                 text-decoration: underline;
                 text-underline-offset: 1rem;
                 text-decoration-color: rgb(181, 181, 181);
             }
         }
-        .showNavBar{
+        .showNavBar {
             display: flex !important;
             top: 2rem;
             right: 0;
@@ -64,25 +65,24 @@
             box-shadow: 1px 2px #00000017;
         }
     }
-   
 }
 
 @media screen and (max-width: 600px) {
-   .header{
-    margin: 0 0.5rem;
-    .logo{
-        width: fit-content;
-    }
-    .navcontainer{
-        .burgerMenu{
-            display: flex;
+    .header {
+        margin: 0 0.5rem;
+        .logo {
+            width: fit-content;
         }
-        .nabar{
-        position: absolute;
-        flex-direction: column;
-        display: none;
-        background: white;
-    }  }
-   }
-  }
-
+        .navcontainer {
+            .burgerMenu {
+                display: flex;
+            }
+            .nabar {
+                position: absolute;
+                flex-direction: column;
+                display: none;
+                background: white;
+            }
+        }
+    }
+}

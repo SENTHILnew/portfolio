@@ -1,65 +1,65 @@
-.contentContainer{
+.contentContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     @apply gap-y-36;
-    
-.intro{
-    display: flex;
-    @apply gap-x-20;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    scroll-behavior: smooth;
 
-    .infoText{
+    .intro {
         display: flex;
+        @apply gap-x-20;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .infoText {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            @apply gap-y-4;
+            align-items: center;
+        }
+        .contactContainer {
+            @apply gap-x-4 flex;
+
+            .buttons {
+                padding: 0.8rem;
+                border-radius: 0.8rem;
+                @apply font-bold;
+                width: 9rem;
+                text-align: center;
+            }
+            .cv {
+                color: white;
+                background: black;
+            }
+            .contact {
+                color: rgb(32, 32, 32);
+                border: 1px solid rgb(32, 32, 32);
+            }
+        }
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
         justify-content: center;
         flex-direction: column;
         @apply gap-y-4;
-        align-items: center;
-    }
-    .contactContainer{
-        @apply gap-x-4 flex ;
 
-        .buttons{
-            padding: 0.8rem;
-            border-radius: 0.8rem;
-            @apply font-bold;
-            width: 9rem;
-            text-align: center;
-        }
-        .cv{
-            color: white;
-            background: black;
-        }
-        .contact{
-            color: rgb(32, 32, 32);
+        .linksContainer {
+            display: flex;
+            @apply gap-x-8 bg-gray-200 p-4 rounded-full items-center justify-center;
             border: 1px solid rgb(32, 32, 32);
+            flex-wrap: wrap;
+            margin: 0 1rem;
+            p:hover {
+                color: grey;
+                text-decoration: underline;
+                text-underline-offset: 1rem;
+                text-decoration-color: rgb(181, 181, 181);
+            }
         }
     }
-   
-}
-
-.contact{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    @apply gap-y-4;
-
-    .linksContainer{
-        display: flex;
-        @apply gap-x-8 bg-gray-200 p-4 rounded-full items-center justify-center;
-        border: 1px solid rgb(32, 32, 32);
-        flex-wrap: wrap;
-        margin: 0 1rem;
-        p:hover{
-            color: grey;
-            text-decoration: underline;
-            text-underline-offset: 1rem;
-            text-decoration-color: rgb(181, 181, 181);
-        }
-    }
-}
 }
