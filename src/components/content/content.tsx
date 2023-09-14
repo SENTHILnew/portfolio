@@ -119,7 +119,7 @@ const PortfolioContent: React.FC = () => {
                     </p>
                 </div>
             </div>
-            <nav className="flex gap-x-8 text-xl">
+            <nav className="flex gap-8 text-xl flex-col md:flex-rwo items-center justify-center">
                 <Navs></Navs>
             </nav>
         </div>

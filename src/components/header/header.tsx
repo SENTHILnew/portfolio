@@ -18,7 +18,11 @@ const Header: React.FC = () => {
                     <span></span>
                 </div>
                 <nav className={`flex ${classes.nabar} ${isMenuOpen && classes.showNavBar}`}>
-                    <Navs></Navs>
+                    <Navs
+                        onClick={() => {
+                            toggleMenu()
+                        }}
+                    ></Navs>
                 </nav>
             </div>
         </header>
