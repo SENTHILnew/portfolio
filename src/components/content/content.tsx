@@ -60,7 +60,7 @@ const PortfolioContent: React.FC = () => {
                         </a>
                     </div>
                 </div>
-                <div className="w-[30rem] h-[30rem] rounded-full overflow-hidden">
+                <div className="w-[30rem] h-[30rem] rounded-full overflow-hidden max-w-[95%]">
                     <img src={over ? profileGif : profile} onMouseOver={() => setOver(true)} onMouseOut={() => setOver(false)}></img>
                 </div>
             </div>
@@ -91,11 +91,11 @@ const PortfolioContent: React.FC = () => {
                 <p className="text-gray-600 font-bold">Explore My</p>
                 <p className="text-5xl font-bold">Experience</p>
                 <div className="flex flex-wrap gap-x-12 gap-y-12 justify-center w-full">
-                    <div className="flex gap-y-6 flex-col h-full border-2 border-gray-400 rounded-2xl p-4 items-center justify-center p-10 max-w-[95%] min-w-[35%]">
+                    <div className="flex gap-y-6 flex-col h-full border-2 border-gray-400 rounded-2xl p-4 items-center justify-center p-10 w-[85%] md:w-[40%]">
                         <h3 className="text-2xl text-gray-400 font-bold">Front End Experience</h3>
                         <div className="grid grid-cols-2 gap-x-4 gap-y-6">{frontEndExperienceDOM}</div>
                     </div>
-                    <div className="flex gap-y-6 flex-col h-full border-2 border-gray-400 rounded-2xl p-4 items-center justify-center p-10 max-w-[95%] min-w-[35%]">
+                    <div className="flex gap-y-6 flex-col h-full border-2 border-gray-400 rounded-2xl p-4 items-center justify-center p-10 w-[85%] md:w-[40%]">
                         <h3 className="text-2xl text-gray-400 font-bold">Back End Experience</h3>
                         <div className="grid grid-cols-2 gap-x-4 gap-y-6">{backEndExperienceDOM}</div>
                     </div>

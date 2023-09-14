@@ -5,6 +5,8 @@
     align-items: center;
     @apply gap-y-36;
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 
     .intro {
         display: flex;
