@@ -17,5 +17,13 @@
         { "title": "SQL", "rating": "Intermediate" },
         { "title": ".NET", "rating": "Basic" },
         { "title": "Azure Devops", "rating": "Basic" }
+    ],
+    "projects": [
+        {
+            "githubLink": "https://github.com/SENTHILnew/the-space-fighter",
+            "liveLink": "https://the-space-fighter.netlify.app/",
+            "banner": "",
+            "description": "What is a better way to learn coding than a game?"
+        }
     ]
 }

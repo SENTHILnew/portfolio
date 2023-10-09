@@ -33,6 +33,27 @@ const PortfolioContent: React.FC = () => {
         </div>
     ))
 
+    const ProjectsDOM = experiences.projects.map((experience, index) => (
+        <div key={index + experience.description} className="flex gap-y-4 flex-col border-2 rounded-md border-gray-400 p-4 justify-center items-center">
+            <img src={checkMar} className="h-6 w-3/4"></img>
+            <p>{experience.description}</p>
+            <div className="flex gap-x-4">
+                <a
+                    className="border-gray-400 border-2 p-2 cursor-pointer hover:bg-black hover:text-white rounded-full"
+                    onClick={() => window.open(experience.githubLink, '_blank')}
+                >
+                    Source code
+                </a>
+                <a
+                    className="border-gray-400 border-2 p-2 cursor-pointer hover:bg-black hover:text-white rounded-full"
+                    onClick={() => window.open(experience.liveLink, '_blank')}
+                >
+                    Live Link
+                </a>
+            </div>
+        </div>
+    ))
+
     return (
         <div className={classes.contentContainer}>
             <div id="about" className={classes.intro}>
@@ -100,6 +121,11 @@ const PortfolioContent: React.FC = () => {
                         <div className="grid grid-cols-2 gap-x-4 gap-y-6">{backEndExperienceDOM}</div>
                     </div>
                 </div>
+            </div>
+            <div id="projects" className="flex flex-col justify-center items-center gap-y-8 w-full flex-wrap">
+                <p className="text-gray-600 font-bold">Browse My</p>
+                <p className="text-5xl font-bold">Projects</p>
+                {ProjectsDOM}
             </div>
             <div id="contact" className={classes.contact}>
                 <p className="text-gray-600 font-bold">Get in Touch</p>
